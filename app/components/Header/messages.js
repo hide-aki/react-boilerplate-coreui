@@ -14,4 +14,8 @@ export default defineMessages({
     id: 'boilerplate.components.Header.features',
     defaultMessage: 'Features',
   },
+  rsdemo: {
+    id: 'boilerplate.components.Header.rsdemo',
+    defaultMessage: 'RSDemo',
+  },
 });

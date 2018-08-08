@@ -23,6 +23,9 @@ class Header extends React.Component {
           <HeaderLink to="/features">
             <FormattedMessage {...messages.features} />
           </HeaderLink>
+          <HeaderLink to="/rsdemo">
+            <FormattedMessage {...messages.rsdemo} />
+          </HeaderLink>
         </NavBar>
       </div>
     );
