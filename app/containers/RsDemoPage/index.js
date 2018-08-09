@@ -35,7 +35,15 @@ import messages from './messages';
 
 /* eslint-disable react/prefer-stateless-function */
 export class RsDemoPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.toggle = this.toggle.bind(this);
+  }
+  toggle(event) {
+    console.log(event);
+  }
   render() {
+    const isOpen = true;
     return (
       <div>
         <Helmet>
@@ -43,11 +51,10 @@ export class RsDemoPage extends React.Component {
           <meta name="description" content="Description of RsDemoPage" />
         </Helmet>
         <FormattedMessage {...messages.header} />
-        <Button>Click me</Button>
         <Navbar color="inverse" light expand="md">
           <NavbarBrand href="/">reactstrap</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen navbar>
+          <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink href="/components/">Components</NavLink>

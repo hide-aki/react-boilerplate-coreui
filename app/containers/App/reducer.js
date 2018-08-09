@@ -22,6 +22,7 @@ const initialState = fromJS({
   userData: {
     repositories: false,
   },
+  currentPage: '',
 });
 
 function appReducer(state = initialState, action) {
