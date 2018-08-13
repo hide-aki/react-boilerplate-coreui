@@ -9,6 +9,9 @@ import {
   NavLink,
 } from 'reactstrap';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBell } from '@fortawesome/free-solid-svg-icons';
+
 
 import {
   AppAsideToggler,
@@ -25,8 +28,7 @@ const propTypes = {
 
 const defaultProps = {};
 
-// eslint-disable-line react/prefer-stateless-function
-class DefaultHeader extends Component {
+class DefaultHeader extends Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     // eslint-disable-next-line
     const { children, ...attributes } = this.props;
@@ -54,7 +56,7 @@ class DefaultHeader extends Component {
         <Nav className="ml-auto" navbar>
           <NavItem className="d-md-down-none">
             <NavLink href="#">
-              <i className="icon-bell" />
+              <FontAwesomeIcon icon={faBell} />
               <Badge pill color="danger">
                 5
               </Badge>
