@@ -29,8 +29,8 @@ export class AppHeader extends React.Component {
           <title>AppHeader</title>
           <meta name="description" content="Description of AppHeader" />
         </Helmet>
-        <FormattedMessage {...messages.header} />
         <AppHeaderBar />
+        <FormattedMessage {...messages.header} />
       </div>
     );
   }

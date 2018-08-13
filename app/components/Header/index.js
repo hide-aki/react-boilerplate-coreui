@@ -1,15 +1,15 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-} from 'reactstrap';
+// import {
+//   Collapse,
+//   Navbar,
+//   NavbarToggler,
+//   NavbarBrand,
+//   Nav,
+//   NavItem,
+//   NavLink,
+// } from 'reactstrap';
 
 import A from './A';
 import Img from './Img';
